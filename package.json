@@ -6,6 +6,12 @@
   "repository": "https://github.com/celalertug/js-mocha-template",
   "author": "celal ertug",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha tests",
+    "test-api": "mocha -w tests/api.test.js",
+    "test-index": "mocha -w tests/index.test.js"
+  },
   "devDependencies": {
     "mocha": "^7.1.0"
   },
