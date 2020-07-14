@@ -8,7 +8,7 @@ const axios = require('axios').default;
 const controller = require('../../location-service/index.js');
 
 describe('server', () => {
-  const TEST_TIMEOUT = 35000;
+  const TEST_TIMEOUT = 25000;
 
   const PORT = 3000;
   const URL = `http://localhost:${PORT}`;
@@ -41,7 +41,6 @@ describe('server', () => {
         lat: 38.656567,
         lng: 29.687739,
       },
-      step: 1,
     });
     // console.log(res.data);
     assert.deepStrictEqual(res.data.code, 200);
