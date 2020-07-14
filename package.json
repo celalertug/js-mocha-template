@@ -1,9 +1,9 @@
 {
-  "name": "js-mocha-template",
+  "name": "angrymob-emulator-service",
   "version": "1.0.0",
-  "description": "mocha starter template",
+  "description": "angrymob genymotion emulator services",
   "main": "index.js",
-  "repository": "https://github.com/celalertug/js-mocha-template",
+  "repository": "https://github.com/celalertug/angrymob-emulator-service",
   "author": "celal ertug",
   "license": "MIT",
   "scripts": {
@@ -11,6 +11,7 @@
     "test": "mocha tests",
     "test-api": "mocha -w tests/api.test.js",
     "test-index": "mocha -w tests/index.test.js",
+    "test-spe": "mocha  tests/location-service/api.test.js",
     "lint": "eslint"
   },
   "devDependencies": {
@@ -23,7 +24,9 @@
     "axios": "^0.19.2",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "uuid": "^8.2.0"
   }
 }
